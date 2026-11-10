@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: algosearch_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: algosearch
+      POSTGRES_PASSWORD: algosearch_password
+      POSTGRES_DB: algosearch
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U algosearch -d algosearch"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
