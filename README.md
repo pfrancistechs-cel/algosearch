@@ -65,3 +65,4 @@ algosearch/
 
 ## 📜 License
 MIT © pfrancistechs-cel
+
