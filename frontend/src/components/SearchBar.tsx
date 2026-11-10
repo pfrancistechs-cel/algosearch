@@ -71,3 +71,4 @@ export function SearchBar({ query, onChange, isLoading = false }: SearchBarProps
     </div>
   );
 }
+

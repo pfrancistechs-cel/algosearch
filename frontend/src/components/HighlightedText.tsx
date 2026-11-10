@@ -38,3 +38,4 @@ export function HighlightedText({ html, className = '' }: HighlightedTextProps) 
 
   return <span className={className}>{parts}</span>;
 }
+

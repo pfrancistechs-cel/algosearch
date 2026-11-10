@@ -73,3 +73,4 @@ export async function deleteDocument(id: string): Promise<boolean> {
 
   return true;
 }
+

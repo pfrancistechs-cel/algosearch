@@ -30,3 +30,4 @@ export function TelemetryPill({ totalHits, processingTimeMs, query }: TelemetryP
     </div>
   );
 }
+

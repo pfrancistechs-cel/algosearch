@@ -145,3 +145,4 @@ func autoSeedIfEmpty(ctx context.Context, pool *pgxpool.Pool) error {
 	log.Printf("[Database] Successfully seeded %d tech products\n", len(sampleDocs))
 	return nil
 }
+

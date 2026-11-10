@@ -212,15 +212,15 @@ func (r *Repository) searchHybridQuery(ctx context.Context, cleanQuery string, p
 		var tags []string
 		var hlTitle, hlDesc string
 		if err := rows.Scan(
-			&h.ID, 
-			&h.Title, 
-			&h.Description, 
-			&h.Category, 
-			&tags, 
-			&h.Price, 
-			&h.PopularityScore, 
-			&h.Score, 
-			&hlTitle, 
+			&h.ID,
+			&h.Title,
+			&h.Description,
+			&h.Category,
+			&tags,
+			&h.Price,
+			&h.PopularityScore,
+			&h.Score,
+			&hlTitle,
 			&hlDesc,
 		); err != nil {
 			return nil, nil, 0, fmt.Errorf("scan hybrid row error: %w", err)

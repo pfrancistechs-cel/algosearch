@@ -219,3 +219,4 @@ export function AddDocumentModal({ isOpen, onClose, onIndexed }: AddDocumentModa
     </div>
   );
 }
+

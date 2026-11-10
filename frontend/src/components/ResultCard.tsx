@@ -88,3 +88,4 @@ export function ResultCard({ hit, onDelete }: ResultCardProps) {
     </article>
   );
 }
+
